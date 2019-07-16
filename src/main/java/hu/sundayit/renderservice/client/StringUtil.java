@@ -25,7 +25,7 @@
 
 package hu.sundayit.renderservice.client;
 
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2019-07-16T12:26:57.599+02:00")
+
 public class StringUtil {
   /**
    * Check if the given array contains the given value (with case-insensitive comparison).

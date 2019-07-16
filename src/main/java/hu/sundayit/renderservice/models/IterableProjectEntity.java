@@ -31,7 +31,7 @@ import java.util.Objects;
 /**
  * IterableProjectEntity
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2019-07-16T12:26:57.599+02:00")
+
 public class IterableProjectEntity   {
 
   @Override

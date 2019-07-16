@@ -29,16 +29,16 @@ import java.util.Objects;
 import com.google.gson.annotations.SerializedName;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import java.time.OffsetDateTime;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import org.joda.time.DateTime;
 
 
 /**
  * RenderRequestEntity
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2019-07-16T12:26:57.599+02:00")
+
 public class RenderRequestEntity   {
   @SerializedName("documentTypeId")
   private Long documentTypeId = null;
@@ -56,10 +56,10 @@ public class RenderRequestEntity   {
   private Long projectId = null;
 
   @SerializedName("renderFinished")
-  private DateTime renderFinished = null;
+  private OffsetDateTime renderFinished = null;
 
   @SerializedName("renderRequested")
-  private DateTime renderRequested = null;
+  private OffsetDateTime renderRequested = null;
 
   /**
    * Render target.
@@ -187,7 +187,7 @@ public class RenderRequestEntity   {
     this.projectId = projectId;
   }
 
-  public RenderRequestEntity renderFinished(DateTime renderFinished) {
+  public RenderRequestEntity renderFinished(OffsetDateTime renderFinished) {
     this.renderFinished = renderFinished;
     return this;
   }
@@ -197,15 +197,15 @@ public class RenderRequestEntity   {
    * @return renderFinished
   **/
   @ApiModelProperty(example = "null", value = "Date and time the render request was served")
-  public DateTime getRenderFinished() {
+  public OffsetDateTime getRenderFinished() {
     return renderFinished;
   }
 
-  public void setRenderFinished(DateTime renderFinished) {
+  public void setRenderFinished(OffsetDateTime renderFinished) {
     this.renderFinished = renderFinished;
   }
 
-  public RenderRequestEntity renderRequested(DateTime renderRequested) {
+  public RenderRequestEntity renderRequested(OffsetDateTime renderRequested) {
     this.renderRequested = renderRequested;
     return this;
   }
@@ -215,11 +215,11 @@ public class RenderRequestEntity   {
    * @return renderRequested
   **/
   @ApiModelProperty(example = "null", value = "Date and time the render request was received")
-  public DateTime getRenderRequested() {
+  public OffsetDateTime getRenderRequested() {
     return renderRequested;
   }
 
-  public void setRenderRequested(DateTime renderRequested) {
+  public void setRenderRequested(OffsetDateTime renderRequested) {
     this.renderRequested = renderRequested;
   }
 
